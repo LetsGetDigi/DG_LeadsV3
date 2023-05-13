@@ -161,6 +161,9 @@ export default function CallSecond() {
                                     <StaticDateTimePicker orientation="landscape" onAccept={(event) => { handleClose2(); handleButtonClick("callLater", new Date(event.$d).toISOString()) }} />
                                 </LocalizationProvider>
                             </Popover>
+                            <Button size='large' variant="outlined" startIcon={<PhoneForwardedIcon />} onClick={handleClick}>
+                                Block Me
+                            </Button>
                         </Grid>
                     </Grid>
                 </Card>

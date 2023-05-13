@@ -52,17 +52,17 @@ export default function CalNowPage() {
                             {currentData.email !== "" && <>
                                 <Typography variant='h5' >Email</Typography>
                                 <DefaultCopyField sx={{ my: 3 }} value={currentData.email} /></>}
-                            {currentData.website !== "" && <>
+                            {currentData.phone !== "" && <>
                                 <Typography variant='h5'> Phone </Typography>
                                 <DefaultCopyField sx={{ my: 3 }} value={currentData.phone} /></>}
                         </Container>
                         <Container sx={{ width: "50%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             {currentData.category !== "" && <><Typography variant='h5' > Category </Typography>
                                 <DefaultCopyField sx={{ width: "fit-content", my: 3 }} value={currentData.category} /></>}
-                            {currentData.email !== "" && <>
+                            {currentData.website !== "" && <>
                                 <Typography variant='h5' >Website</Typography>
                                 <DefaultCopyField sx={{ my: 3 }} value={currentData.website} /></>}
-                            {currentData.website !== "" && <>
+                            {currentData.address !== "" && <>
                                 <Typography variant='h5'> Address </Typography>
                                 <DefaultCopyField sx={{ my: 3 }} value={currentData.address} /></>}
                         </Container>
