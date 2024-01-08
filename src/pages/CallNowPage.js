@@ -27,12 +27,14 @@ export default function CalNowPage() {
             .then((response) => response.json())
             .then((currentData) => {
                 setData(currentData);
-                setCurrentData(currentData)
+                setCurrentData(currentData);
             })
             .catch((error) => {
                 console.error('Error fetching data:', error);
             });
     }, []);
+
+    console.log(currentData);
 
     return (
         <>
@@ -151,3 +153,4 @@ export default function CalNowPage() {
 }
 
 
+console.log();
